@@ -1,0 +1,8 @@
+<bot schemaname="new_bot_a9d3efe2774b41388194ba52319e524b">
+  <authenticationmode>2</authenticationmode>
+  <authenticationtrigger>1</authenticationtrigger>
+  <iscustomizable>1</iscustomizable>
+  <language>1033</language>
+  <name>SharePoint Site Creation Bot</name>
+  <timezoneruleversionnumber>4</timezoneruleversionnumber>
+</bot>
