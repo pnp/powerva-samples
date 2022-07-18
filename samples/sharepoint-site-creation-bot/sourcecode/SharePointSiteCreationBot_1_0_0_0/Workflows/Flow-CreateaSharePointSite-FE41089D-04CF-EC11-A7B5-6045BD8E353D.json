@@ -244,27 +244,52 @@
                       "value": false
                     }
                   },
-                  "Set_variable_-_Error_Message_-_Site_Exists": {
+                  "Condition": {
+                    "actions": {
+                      "Set_variable_-_Error_Message_-_Site_Exists": {
+                        "runAfter": {},
+                        "metadata": {
+                          "operationMetadataId": "073aca31-2c41-4f13-84cb-0fbce7168d27"
+                        },
+                        "type": "SetVariable",
+                        "inputs": {
+                          "name": "ErrorMessage",
+                          "value": "A site already exists with this Name/Path"
+                        }
+                      }
+                    },
                     "runAfter": {
                       "Set_variable_-_Site_Created_-_To_False": [
                         "Succeeded"
                       ]
                     },
-                    "metadata": {
-                      "operationMetadataId": "073aca31-2c41-4f13-84cb-0fbce7168d27"
+                    "expression": {
+                      "equals": [
+                        "@empty(variables('ErrorMessage'))",
+                        "@true"
+                      ]
                     },
-                    "type": "SetVariable",
-                    "inputs": {
-                      "name": "ErrorMessage",
-                      "value": "A site already exists with this Name/Path"
-                    }
+                    "metadata": {
+                      "operationMetadataId": "d2427560-7591-4605-a62c-d18fc4d68b53"
+                    },
+                    "type": "If"
                   }
                 }
               },
               "expression": {
-                "equals": [
-                  "@variables('SiteAlreadyExists')",
-                  "@false"
+                "and": [
+                  {
+                    "equals": [
+                      "@variables('SiteAlreadyExists')",
+                      "@false"
+                    ]
+                  },
+                  {
+                    "equals": [
+                      "@empty(variables('ErrorMessage'))",
+                      "@true"
+                    ]
+                  }
                 ]
               },
               "metadata": {
@@ -481,36 +506,60 @@
                 }
               }
             },
-            "Condition": {
-              "actions": {
-                "Set_variable_-_Site_Exists": {
-                  "runAfter": {},
-                  "metadata": {
-                    "operationMetadataId": "9dabe87d-dda6-4a65-a1f1-6719b2bb7bc0"
-                  },
-                  "type": "SetVariable",
-                  "inputs": {
-                    "name": "SiteAlreadyExists",
-                    "value": false
-                  }
-                }
-              },
+            "Switch_2": {
               "runAfter": {
                 "Parse_JSON": [
                   "Succeeded"
                 ]
               },
-              "expression": {
-                "equals": [
-                  "@body('Parse_JSON')?['status']",
-                  404
-                ]
+              "cases": {
+                "Case": {
+                  "case": 404,
+                  "actions": {
+                    "Set_variable_-_Site_Exists": {
+                      "runAfter": {},
+                      "metadata": {
+                        "operationMetadataId": "9dabe87d-dda6-4a65-a1f1-6719b2bb7bc0"
+                      },
+                      "type": "SetVariable",
+                      "inputs": {
+                        "name": "SiteAlreadyExists",
+                        "value": false
+                      }
+                    }
+                  }
+                },
+                "Case_2": {
+                  "case": 403,
+                  "actions": {
+                    "Set_variable_-_Site_exists_if_403": {
+                      "runAfter": {},
+                      "type": "SetVariable",
+                      "inputs": {
+                        "name": "SiteAlreadyExists",
+                        "value": true
+                      }
+                    }
+                  }
+                }
               },
+              "default": {
+                "actions": {
+                  "Set_variable_-_Error_-_Handle_other_cases": {
+                    "runAfter": {},
+                    "type": "SetVariable",
+                    "inputs": {
+                      "name": "ErrorMessage",
+                      "value": "@body('Parse_JSON')?['message']"
+                    }
+                  }
+                }
+              },
+              "expression": "@body('Parse_JSON')?['status']",
               "metadata": {
-                "operationMetadataId": "5763d414-5123-4f0c-80ca-3417f0369529"
+                "operationMetadataId": "18da0f43-36f0-4180-a835-b2e0c8886383"
               },
-              "type": "If",
-              "description": "If we get a not found error, we are good to go and create the site"
+              "type": "Switch"
             }
           },
           "runAfter": {
