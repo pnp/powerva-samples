@@ -1,0 +1,49 @@
+{
+  "namedEntities": [
+    {
+      "synonyms": [
+        "home"
+      ],
+      "id": "ff0ca6dd-de7a-4bee-b849-16210d63f3c5",
+      "displayName": "Home User",
+      "updatedTime": "2022-05-08T19:19:42.9570449Z",
+      "updatedUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969"
+    },
+    {
+      "synonyms": [
+        "gaming"
+      ],
+      "id": "2ccf421b-89a6-43a8-8b4f-b8d8f63b58bf",
+      "displayName": "Gamer",
+      "updatedTime": "2022-05-08T19:19:42.9570449Z",
+      "updatedUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969"
+    },
+    {
+      "synonyms": [
+        "business"
+      ],
+      "id": "2d32734c-9552-47c5-963b-563fe1d9ea7e",
+      "displayName": "Business User",
+      "updatedTime": "2022-05-08T19:19:42.9570449Z",
+      "updatedUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969"
+    }
+  ],
+  "closedListTypes": [
+    {
+      "namedEntities": [
+        "ff0ca6dd-de7a-4bee-b849-16210d63f3c5",
+        "2ccf421b-89a6-43a8-8b4f-b8d8f63b58bf",
+        "2d32734c-9552-47c5-963b-563fe1d9ea7e"
+      ],
+      "smartMatchingEnabled": true,
+      "customTypeSchema": "ClosedList",
+      "id": "new_customtype_a9d3efe2774b41388194ba52319e524b_f86fcadfd497444e91ed11c12b059d10",
+      "displayName": "Usage Type",
+      "description": "Lesson 4 Usage Type Entity",
+      "createdTime": "2019-10-25T14:03:43.9601778Z",
+      "updatedTime": "2022-05-08T19:19:42.9570449Z",
+      "createdUserId": "user0",
+      "updatedUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969"
+    }
+  ]
+}

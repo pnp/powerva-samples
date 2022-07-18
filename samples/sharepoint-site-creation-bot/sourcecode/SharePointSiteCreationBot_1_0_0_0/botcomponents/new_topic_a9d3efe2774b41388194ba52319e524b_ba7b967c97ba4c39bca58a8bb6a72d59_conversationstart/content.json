@@ -1,0 +1,108 @@
+{
+  "intents": [
+    {
+      "systemIntentTypes": [
+        "ConversationStart",
+        "Greeting"
+      ],
+      "intentType": "System",
+      "triggerQueries": [
+        "Good afternoon",
+        "Good morning",
+        "Hello",
+        "Hello agent!",
+        "Hello and good morning to you",
+        "Hello can you help me?",
+        "Hello can you please help me",
+        "Hello friend",
+        "Hello good afternoon",
+        "Hello good evening",
+        "Hello greeting",
+        "Hello how are you",
+        "Hello how are you doing?",
+        "Hello how are you?",
+        "Hello I need help",
+        "Hello madam",
+        "Hello my friend",
+        "Hello sir",
+        "Hello support",
+        "Hello team",
+        "Hello there",
+        "Hello there, how are you?",
+        "Hello virtual agent",
+        "Hello!",
+        "Hello, good day to you",
+        "Hello, good evening",
+        "Hello, good morning",
+        "Hello, how are you doing today?",
+        "Hello, how are you?",
+        "Hello, I need help",
+        "Hey",
+        "Hey !",
+        "Hey :)",
+        "Hey good morning",
+        "Hey how are u",
+        "Hey I need help",
+        "Hey man",
+        "Hi",
+        "Hi agent",
+        "Hi can you help me",
+        "Hi good afternoon",
+        "Hi good day",
+        "Hi good evening",
+        "Hi how are you",
+        "Hi how are you doing today?",
+        "Hi I hope you can help me",
+        "Hi I need help",
+        "Hi I need help here",
+        "Hi support",
+        "Hi support team",
+        "Hi there!",
+        "Hi virtual agent"
+      ],
+      "dialogId": "new_topic_a9d3efe2774b41388194ba52319e524b_ba7b967c97ba4c39bca58a8bb6a72d59_conversationstart",
+      "isTriggeringEnabled": true,
+      "id": "new_topic_a9d3efe2774b41388194ba52319e524b_ba7b967c97ba4c39bca58a8bb6a72d59_conversationstart",
+      "displayName": "Greeting",
+      "description": "This is the default greeting when a chat begins. Start by having your bot or virtual agent introduce itself. When building out topics, consider whether you need to comply with applicable local law.",
+      "createdTime": "2019-01-15T00:00:00Z",
+      "updatedTime": "2022-05-09T10:14:04.2241079Z",
+      "createdUserId": "user0",
+      "updatedUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969"
+    }
+  ],
+  "dialogs": [
+    {
+      "rootNodeId": "4c32d4d5-9bdc-47f0-afaf-614883acef7b",
+      "dialogType": "System",
+      "messageNodes": [
+        {
+          "botMessageId": "9b10a545-fa43-4301-a7c4-8d17b0f1ff39",
+          "nodeType": "BotMessageNode",
+          "id": "4c32d4d5-9bdc-47f0-afaf-614883acef7b"
+        }
+      ],
+      "id": "new_topic_a9d3efe2774b41388194ba52319e524b_ba7b967c97ba4c39bca58a8bb6a72d59_conversationstart",
+      "displayName": "Dialog",
+      "createdTime": "2019-01-15T00:00:00Z",
+      "updatedTime": "2022-05-09T10:14:04.2241079Z",
+      "createdUserId": "user0",
+      "updatedUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969"
+    }
+  ],
+  "botMessages": [
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "PlainText",
+          "content": "So, what can I help you with today?"
+        }
+      },
+      "id": "9b10a545-fa43-4301-a7c4-8d17b0f1ff39",
+      "createdTime": "2019-01-15T00:00:00Z",
+      "updatedTime": "2019-01-15T00:00:00Z",
+      "createdUserId": "user0",
+      "updatedUserId": "user0"
+    }
+  ]
+}

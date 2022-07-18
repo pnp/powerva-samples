@@ -1,0 +1,37 @@
+{
+  "namedEntities": [
+    {
+      "id": "be7ee5f8-18ae-47ef-afe4-ad794d665315",
+      "displayName": "Team Site",
+      "createdTime": "2022-05-08T19:20:31.8638571Z",
+      "updatedTime": "2022-05-08T19:20:31.8638571Z",
+      "createdUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969",
+      "updatedUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969"
+    },
+    {
+      "id": "3325ee0f-f93b-42df-af48-22c923d2ce6c",
+      "displayName": "Communication Site",
+      "createdTime": "2022-05-08T19:20:31.8638571Z",
+      "updatedTime": "2022-05-08T19:20:31.8638571Z",
+      "createdUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969",
+      "updatedUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969"
+    }
+  ],
+  "closedListTypes": [
+    {
+      "namedEntities": [
+        "be7ee5f8-18ae-47ef-afe4-ad794d665315",
+        "3325ee0f-f93b-42df-af48-22c923d2ce6c"
+      ],
+      "smartMatchingEnabled": true,
+      "customTypeSchema": "ClosedList",
+      "id": "new_customtype_57d6f823796d465589d95f1e64a45183",
+      "displayName": "SharePoint Site Type",
+      "description": "",
+      "createdTime": "2022-05-08T19:20:31.8638571Z",
+      "updatedTime": "2022-05-08T19:20:31.8638571Z",
+      "createdUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969",
+      "updatedUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969"
+    }
+  ]
+}
