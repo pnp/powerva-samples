@@ -1,0 +1,341 @@
+{
+  "intents": [
+    {
+      "triggerQueries": [
+        "give me a site",
+        "I want a site",
+        "I want a SharePoint site",
+        "Create a SharePoint Site",
+        "Create a Site"
+      ],
+      "dialogId": "new_topic_95f1c64f6cf94a64b66acebe1d5d33fb",
+      "isTriggeringEnabled": true,
+      "id": "new_topic_95f1c64f6cf94a64b66acebe1d5d33fb",
+      "displayName": "Create a SharePoint Site",
+      "createdTime": "2022-05-08T19:24:22.9421542Z",
+      "updatedTime": "2022-05-09T10:53:41.1176367Z",
+      "createdUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969",
+      "updatedUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969"
+    }
+  ],
+  "namedEntities": [
+    {
+      "id": "be7ee5f8-18ae-47ef-afe4-ad794d665315",
+      "displayName": "Team Site",
+      "createdTime": "2022-05-08T19:20:31.8638571Z",
+      "updatedTime": "2022-05-08T19:20:31.8638571Z",
+      "createdUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969",
+      "updatedUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969"
+    },
+    {
+      "id": "3325ee0f-f93b-42df-af48-22c923d2ce6c",
+      "displayName": "Communication Site",
+      "createdTime": "2022-05-08T19:20:31.8638571Z",
+      "updatedTime": "2022-05-08T19:20:31.8638571Z",
+      "createdUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969",
+      "updatedUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969"
+    }
+  ],
+  "dialogs": [
+    {
+      "rootNodeId": "b41a8787-879c-4c86-8dde-c2c517bf4fae",
+      "messageNodes": [
+        {
+          "botMessageId": "4110a32d-356d-4270-9694-949e533fd798",
+          "nodeType": "BotMessageNode",
+          "id": "887d4a68-1312-42ce-a24f-06e1f71e9ff1"
+        },
+        {
+          "botMessageId": "f9427274-cd6d-48ff-a019-fc356768e652",
+          "nodeType": "BotMessageNode",
+          "id": "a5f9bcc2-502b-42db-ab50-2a7906338ab5"
+        }
+      ],
+      "actionNodes": [
+        {
+          "contextVariableId": "de633f97-d231-40f7-845f-4ff624219bf6",
+          "nodeType": "ActionNode",
+          "inputParameterVariableIdMap": {
+            "text": "{30bcc9fc-cc0e-451d-80f6-20103c97ad3f}",
+            "text_1": "{fee0cb2d-e64a-4357-bd23-538f222fe769}",
+            "text_3": "{7bd4f62b-7262-40bc-8c63-8c540568cf6a}"
+          },
+          "outputExpressionVariableIds": [
+            "c0471769-d6a5-493e-a5ce-3f536655efb4",
+            "a8c87ee9-1266-4b06-bf11-e564137ba3a3",
+            "bf7b28e9-9e4e-41d1-a9c9-139a3eda65f9"
+          ],
+          "id": "b733336b-e92b-433e-87fb-5c3d6f54c8c8",
+          "routes": [
+            {
+              "expression": "@equals(parameters('c0471769-d6a5-493e-a5ce-3f536655efb4'), true)",
+              "targetNodeId": "887d4a68-1312-42ce-a24f-06e1f71e9ff1"
+            }
+          ],
+          "defaultTargetNodeId": "a5f9bcc2-502b-42db-ab50-2a7906338ab5"
+        }
+      ],
+      "questionNodes": [
+        {
+          "contextVariableId": "30bcc9fc-cc0e-451d-80f6-20103c97ad3f",
+          "nodeType": "QuestionNode",
+          "id": "b41a8787-879c-4c86-8dde-c2c517bf4fae",
+          "defaultTargetNodeId": "d3c10a72-6b15-486e-8ba6-41dbdff141f0"
+        },
+        {
+          "contextVariableId": "fee0cb2d-e64a-4357-bd23-538f222fe769",
+          "nodeType": "QuestionNode",
+          "id": "d3c10a72-6b15-486e-8ba6-41dbdff141f0",
+          "defaultTargetNodeId": "b733336b-e92b-433e-87fb-5c3d6f54c8c8"
+        }
+      ],
+      "id": "new_topic_95f1c64f6cf94a64b66acebe1d5d33fb",
+      "displayName": "Untitled",
+      "createdTime": "2022-05-08T19:24:22.9421542Z",
+      "updatedTime": "2022-05-09T10:53:41.1176367Z",
+      "createdUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969",
+      "updatedUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969"
+    }
+  ],
+  "botMessages": [
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "Okay, what is the site type you want to create?"
+        }
+      },
+      "id": "2e6a2689-c719-4cba-9c4e-0f30b2d9ba34",
+      "createdTime": "2022-05-08T19:21:47.149Z",
+      "updatedTime": "2022-05-08T19:21:47.149Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    },
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "What is your site name?"
+        }
+      },
+      "id": "16c34c53-ff66-4fcf-bd8c-f8534cc415d2",
+      "createdTime": "2022-05-08T19:30:35.131Z",
+      "updatedTime": "2022-05-08T19:30:35.131Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    },
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "Your site was created😁!\n\nAccess it here:\n\n{a8c87ee9-1266-4b06-bf11-e564137ba3a3}"
+        }
+      },
+      "id": "4110a32d-356d-4270-9694-949e533fd798",
+      "createdTime": "2022-05-09T10:37:25.087Z",
+      "updatedTime": "2022-05-09T10:37:25.087Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    },
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "Error happened when creating the site☹️\n\nDetails: {bf7b28e9-9e4e-41d1-a9c9-139a3eda65f9}"
+        }
+      },
+      "id": "f9427274-cd6d-48ff-a019-fc356768e652",
+      "createdTime": "2022-05-09T10:37:39.485Z",
+      "updatedTime": "2022-05-09T10:37:39.485Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    }
+  ],
+  "actionDefinitions": [
+    {
+      "timeoutInSeconds": 60,
+      "retryCount": 1,
+      "method": 2,
+      "headers": {
+        "accept": "application/json"
+      },
+      "bodyContent": "{\"text\":\"{30bcc9fc-cc0e-451d-80f6-20103c97ad3f}\",\"text_1\":\"{fee0cb2d-e64a-4357-bd23-538f222fe769}\",\"text_3\":\"{7bd4f62b-7262-40bc-8c63-8c540568cf6a}\"}",
+      "actionType": "Flow",
+      "flowMetadata": {
+        "id": "fe41089d-04cf-ec11-a7b5-6045bd8e353d",
+        "title": "Flow - Create a SharePoint Site",
+        "description": "Call this flow from Power Virtual Agents.",
+        "httpMethod": 2,
+        "inputParameters": [
+          {
+            "name": "Site Type",
+            "id": "text",
+            "type": "String",
+            "optional": false
+          },
+          {
+            "name": "Site Name",
+            "id": "text_1",
+            "type": "String",
+            "optional": false
+          },
+          {
+            "name": "UserID",
+            "id": "text_3",
+            "type": "String",
+            "optional": false
+          }
+        ],
+        "outputParameters": [
+          {
+            "name": "Site Created",
+            "id": "site_created",
+            "type": "Boolean",
+            "optional": true
+          },
+          {
+            "name": "Url",
+            "id": "url",
+            "type": "String",
+            "optional": true
+          },
+          {
+            "name": "Error",
+            "id": "error",
+            "type": "String",
+            "optional": true
+          }
+        ],
+        "outputSchemaType": "Json",
+        "createdTime": "2022-05-08T19:25:27Z",
+        "isEnabled": true,
+        "lastModifiedTime": "2022-05-09T09:53:13Z",
+        "versionNumber": 358546
+      },
+      "id": "da666db2-d609-4efd-ac04-d590802cbfcd",
+      "displayName": "Flow - Create a SharePoint Site",
+      "description": "Call this flow from Power Virtual Agents.",
+      "createdTime": "2022-05-09T09:53:47.848Z",
+      "updatedTime": "2022-05-09T09:53:47.848Z"
+    }
+  ],
+  "contextVariables": [
+    {
+      "customTypeId": "new_customtype_57d6f823796d465589d95f1e64a45183",
+      "initializerType": "UserQuestion",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": true,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "namedEntityOptions": [
+        "be7ee5f8-18ae-47ef-afe4-ad794d665315",
+        "3325ee0f-f93b-42df-af48-22c923d2ce6c"
+      ],
+      "messages": {
+        "GetValue": [
+          "2e6a2689-c719-4cba-9c4e-0f30b2d9ba34"
+        ]
+      },
+      "isGlobal": false,
+      "id": "30bcc9fc-cc0e-451d-80f6-20103c97ad3f",
+      "displayName": "varSpSiteType",
+      "createdTime": "2022-05-08T19:24:22.9421542Z",
+      "updatedTime": "2022-05-09T10:53:41.1176367Z",
+      "createdUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969",
+      "updatedUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969"
+    },
+    {
+      "systemType": "None",
+      "initializerType": "UserQuestion",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": true,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "messages": {
+        "GetValue": [
+          "16c34c53-ff66-4fcf-bd8c-f8534cc415d2"
+        ]
+      },
+      "isGlobal": false,
+      "id": "fee0cb2d-e64a-4357-bd23-538f222fe769",
+      "displayName": "varSiteName",
+      "createdTime": "2022-05-08T19:30:35.131Z",
+      "updatedTime": "2022-05-09T10:53:41.1176367Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969"
+    },
+    {
+      "customTypeId": "2829d9ee-86d6-4268-831f-28bfbb8c8627",
+      "initializerType": "Action",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": false,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "actionId": "da666db2-d609-4efd-ac04-d590802cbfcd",
+      "isGlobal": false,
+      "id": "de633f97-d231-40f7-845f-4ff624219bf6",
+      "displayName": "",
+      "createdTime": "2022-05-09T09:53:47.848Z",
+      "updatedTime": "2022-05-09T10:53:41.1176367Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969"
+    },
+    {
+      "systemType": "Boolean",
+      "initializerType": "Expression",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": false,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "expression": "@parameters('de633f97-d231-40f7-845f-4ff624219bf6')['site_created']",
+      "isGlobal": false,
+      "id": "c0471769-d6a5-493e-a5ce-3f536655efb4",
+      "displayName": "SiteCreated",
+      "createdTime": "2022-05-09T09:53:47.848Z",
+      "updatedTime": "2022-05-09T10:53:41.1176367Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969"
+    },
+    {
+      "systemType": "String",
+      "initializerType": "Expression",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": false,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "expression": "@parameters('de633f97-d231-40f7-845f-4ff624219bf6')['url']",
+      "isGlobal": false,
+      "id": "a8c87ee9-1266-4b06-bf11-e564137ba3a3",
+      "displayName": "Url",
+      "createdTime": "2022-05-09T09:53:47.849Z",
+      "updatedTime": "2022-05-09T10:53:41.1176367Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969"
+    },
+    {
+      "systemType": "String",
+      "initializerType": "Expression",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": false,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "expression": "@parameters('de633f97-d231-40f7-845f-4ff624219bf6')['error']",
+      "isGlobal": false,
+      "id": "bf7b28e9-9e4e-41d1-a9c9-139a3eda65f9",
+      "displayName": "Error",
+      "createdTime": "2022-05-09T09:53:47.849Z",
+      "updatedTime": "2022-05-09T10:53:41.1176367Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "e1c8cec1-b309-48a0-abe4-aebc28c79969"
+    }
+  ],
+  "jsonTypes": [
+    {
+      "customTypeSchema": "Json",
+      "id": "2829d9ee-86d6-4268-831f-28bfbb8c8627",
+      "displayName": "Response Json Type for Flow - Flow - Create a SharePoint Site",
+      "createdTime": "2022-05-09T09:53:47.848Z",
+      "updatedTime": "2022-05-09T09:53:47.848Z"
+    }
+  ]
+}
