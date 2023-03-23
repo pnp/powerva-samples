@@ -1,10 +1,10 @@
-# Azure OpenAI ChatGPT 3.5 Turbo PNP Conversation Bot
+# Azure OpenAI ChatGPT 3.5 Turbo PNP.AI Conversation Bot
 
 ## Summary
 
 This sample will help you create a Power Virtual Agent bot that you can connect to your existing Azure OpenAI Resource with a ChatGPT 3.5 Turbo deployment that is scoped to PNP content. (The bot's initial system message can be easily altered to update the bot's personality and goals)
 
-![picture of the sample](assets/sample.png)
+![picture of the sample](assets/sample-chat.png)
 
 This solution requires:
 
@@ -33,7 +33,7 @@ This solution requires:
 
 Solution|Author(s)
 --------|---------
-azure-openai-chatgpt-35-turbo-pnp-bot | [Matt Jimison](https://github.com/mjimison) ([@mjimison](https://twitter.com/mjimison))
+azure-openai-chatgpt-35-turbo-pnpai-bot | [Matt Jimison](https://github.com/mjimison) ([@mjimison](https://twitter.com/mjimison))
 
 ## Version history
 
@@ -45,9 +45,11 @@ Version|Date|Comments
 
 This bot utilizes a Fallback topic to ensure prompts entered by the user are passed to a Power Automate Flow that calls an Azure OpenAI ChatGPT 3.5 Turbo endpoint. The current solution utilizes ChatML to create a running history of the conversation that is passed to the API so that the bot has the context of the current conversation with the user.
 
+Users can type 'Restart' to reset the conversation at anytime.
+
 ## Minimal Path to Awesome
 
-* [Download](solution/_1_0_0_1.zip) the `.zip` from the `solution` folder
+* [Download](solution/pnpai_1_0_0_1.zip) the `.zip` from the `solution` folder
 * Import the `.zip` file into your chosen Power Platform environment's Solution repository: **Select Environment** > **Solutions** > **Import solution** 
 * Configure the environment variables for:
     * **AzureOpenAIAPIKey:** API Key to your Azure OpenAI resource
