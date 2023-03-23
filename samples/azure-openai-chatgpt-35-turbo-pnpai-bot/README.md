@@ -49,7 +49,7 @@ Users can type 'Restart' to reset the conversation at anytime.
 
 ## Minimal Path to Awesome
 
-* [Download](solution/pnpai_1_0_0_1.zip) the `.zip` from the `solution` folder
+* [Download](solution/1_0_0_1.zip) the `.zip` from the `solution` folder
 * Import the `.zip` file into your chosen Power Platform environment's Solution repository: **Select Environment** > **Solutions** > **Import solution** 
 * Configure the environment variables for:
     * **AzureOpenAIAPIKey:** API Key to your Azure OpenAI resource
