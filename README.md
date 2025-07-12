@@ -3,10 +3,7 @@
 > [!IMPORTANT]  
 > This repository has been deprecated and is no longer accepting pull requests. All submissions were migrated to [Power Platform samples repository](https://github.com/pnp/powerplatform-samples).
 
-
 This repository contains community samples that demonstrate different usage patterns for Power Virtual Agents.
-
-> We welcome community contributions to the `samples` folder in this repository for demonstrating different use cases with Power Apps.
 
 ## Have issues or questions?
 
