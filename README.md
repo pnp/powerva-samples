@@ -1,27 +1,31 @@
-# Power Virtual Agents Samples
+# Power Virtual Agents Samples (archived)
 
-> [!IMPORTANT]  
-> This repository has been deprecated and is no longer accepting pull requests. All submissions were migrated to [Power Platform samples repository](https://github.com/pnp/powerplatform-samples).
+> [!IMPORTANT]
+> **This repository is archived and is no longer maintained.** All activity has moved to the centralized [Power Platform samples repository](https://github.com/pnp/powerplatform-samples).
+>
+> Please target **all issues and pull requests**, including bug reports, fixes, updates, and new samples, to [pnp/powerplatform-samples](https://github.com/pnp/powerplatform-samples). The content here is retained for historical reference.
 
-This repository contains community samples that demonstrate different usage patterns for Power Virtual Agents.
+This repository preserves community samples that demonstrate different usage patterns for Power Virtual Agents.
 
-## Have issues or questions?
+## Thank you, community!
 
-Please use following logic on submitting your questions or issues to right location to ensure that they are noticed and addressed as soon as possible.
+Thank you to everyone who contributed samples, reported issues, reviewed pull requests, shared feedback, and helped others. This work is a shared effort by community contributors, the PnP team, and Microsoft product teams as part of the **Copilot, Microsoft 365 & Power Platform Community**.
 
-## Additional resources
+Your contributions have made these samples a valuable learning resource. We hope you will join us in the new repository and keep building, learning, and sharing with the community. Thank you, everyone!
 
-- [Microsoft Tech Community](https://community.powerplatform.com/)
+## Continue in the new repository
 
-## Authors
+Visit [pnp/powerplatform-samples](https://github.com/pnp/powerplatform-samples) to find and contribute samples, and follow its [contribution guidance](https://github.com/pnp/powerplatform-samples/blob/main/CONTRIBUTING.md) before submitting a pull request.
 
-This repository's contributors are all community members who volunteered their time to share code samples. Work is done as an open source community project, which each sample contained in their own solution.
+If an issue or pull request was closed here during this transition and still needs attention, please open a corresponding issue or pull request in the new repository and link to the original for context.
 
-## Contributions
+## Join the community calls
 
-These samples are direct from the feature teams, [PnP team](http://aka.ms/m365pnp) or shared by the community. We welcome your input on issues and suggestions for new samples. We do also welcome community contributions. If you have any questions, just let us know.
+Stay up to date with the latest Copilot, Microsoft 365, and Power Platform topics by joining our weekly community calls. Everyone is welcome. Come to learn, ask questions, and connect with the community.
 
-Please have a look on our [Contribution Guidance](./CONTRIBUTING.md) before submitting your pull requests, so that we can get your contribution processed as fast as possible.
+[View the call schedule and download the recurring invites](https://aka.ms/community/calls) so you don't miss an upcoming call.
+
+Stay active in the [Power Platform Community](https://community.powerplatform.com/) and our other community spaces: ask questions, help others, and share what you build.
 
 ## Code of Conduct
 
